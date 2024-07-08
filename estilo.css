@@ -24,8 +24,8 @@
 
 /* COFNGIRAÇÕES BÁSICAS */
 html,
-body, #home {
-  height: 100%;
+body, #home, #escolhas, #foco, #base {
+  height: 100vh;
   overflow-x: hidden;
 }
 
@@ -91,7 +91,6 @@ nav.navbar-transparente {
 
 #escolhas {
   background: var(--vermelho);
-  height: 80%;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -153,7 +152,6 @@ nav.navbar-transparente {
 
  #base {
   background: var(--preto);
-  height: 80%;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -170,4 +168,9 @@ nav.navbar-transparente {
   line-height: 20px;
   font-size: 20px;
   color: var(--branco);
+}
+
+.ajuste {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
