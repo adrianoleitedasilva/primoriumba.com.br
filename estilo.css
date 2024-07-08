@@ -24,16 +24,13 @@
 
 /* COFNGIRAÇÕES BÁSICAS */
 html,
-body,
-#home {
-	height: 100%;
-	overflow-x: hidden;
+body, #home {
+  height: 100%;
+  overflow-x: hidden;
 }
 
 body {
 	background: var(--branco);
-	background-attachment: fixed;
-	font-family: 'Pragmatica';
 }
 
 /* BARRA DE NAVEGAÇÃO */
@@ -45,10 +42,15 @@ nav.navbar-transparente {
 .navbar-light .navbar-nav .nav-link {
 	color: var(--preto);
   font-family: 'Anton';
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 24px;
+  margin-left: 4px;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-	color: #9bf0e1;
+	color: var(--vermelho);
+  border-bottom: 1px solid var(--vermelho);
 }
 
 .navbar-light .navbar-toggler {
@@ -56,27 +58,27 @@ nav.navbar-transparente {
 	border-color: rgba(255, 255, 255, 0.5);
 }
 
-.divisor {
-	width: 1px;
-	background: white;
-	margin: 12px 15px;
-}
-
 #home {
-  height: 100%;
-  margin: 0;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
+#home .container {
+  margin-bottom: 10%;
+}
+
 .capa {
 	text-align: center;
+  margin-top: 0;
+  padding: 0;
 }
 
 #home h1 {
   font-size: 5rem;
   font-family: 'Anton';
+  text-transform: uppercase;
 }
 
 #home .vermelho {
@@ -85,4 +87,87 @@ nav.navbar-transparente {
 
 #home .preto {
   color: var(--preto);
+}
+
+#escolhas {
+  background: var(--vermelho);
+  height: 80%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#escolhas h2 {
+  text-transform: uppercase;
+  font-family: 'Anton';
+  color: var(--branco);
+  margin-bottom: 32px;
+}
+
+#escolhas p {
+  color: var(--branco);
+  font-size: 'Pragmatica';
+  font-size: 28px;
+  line-height: 30px;
+}
+
+#foco {
+  background: var(--branco);
+  height: 80%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+#foco h2 {
+  text-transform: uppercase;
+  font-family: 'Anton';
+  color: var(--preto);
+  margin-bottom: 32px;
+}
+
+#foco p {
+  color: var(--preto);
+  font-size: 'Pragmatica';
+  font-size: 28px;
+  line-height: 30px;
+}
+
+.btn-custom {
+  background-color: var(--preto);
+  border: none;
+  width: 300px;
+  height: 100px;
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 2px;
+  margin-top: 40px;
+  cursor: default;
+}
+
+.btn-custom:hover {
+  background-color: var(--preto);
+ }
+
+ #base {
+  background: var(--preto);
+  height: 80%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#base h3 {
+  color: var(--vermelho);
+  text-transform: uppercase;
+  font-family: 'Anton';
+}
+
+#base p {
+  line-height: 20px;
+  font-size: 20px;
+  color: var(--branco);
 }
