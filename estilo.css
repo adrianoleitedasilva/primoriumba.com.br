@@ -24,7 +24,7 @@
 
 /* COFNGIRAÇÕES BÁSICAS */
 html,
-body, #home, #escolhas, #foco, #base {
+body, #home, #escolhas, #foco, #base, #diferencial {
   height: 100vh;
   overflow-x: hidden;
 }
@@ -75,7 +75,7 @@ nav.navbar-transparente {
   padding: 0;
 }
 
-#home h1 {
+#home h1, #diferencial h1 {
   font-size: 5rem;
   font-family: 'Anton';
   text-transform: uppercase;
@@ -113,10 +113,12 @@ nav.navbar-transparente {
 
 #foco {
   background: var(--branco);
-  height: 80%;
+  height: 100%;
   display: flex;
   text-align: center;
   align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 #foco h2 {
@@ -136,13 +138,13 @@ nav.navbar-transparente {
 .btn-custom {
   background-color: var(--preto);
   border: none;
-  width: 300px;
+  width: 250px;
   height: 100px;
   padding: 10px;
   text-transform: uppercase;
   font-weight: bold;
   border-radius: 2px;
-  margin-top: 40px;
+  margin-top: 20px;
   cursor: default;
 }
 
@@ -156,6 +158,8 @@ nav.navbar-transparente {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 #base h3 {
@@ -173,4 +177,91 @@ nav.navbar-transparente {
 .ajuste {
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+#diferencial {
+  background: var(--branco);
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(40deg, --vermelho, white)
+}
+
+#diferencial p {
+  color: var(--preto);
+  font-size: 'Pragmatica';
+  font-size: 24px;
+  line-height: 24px;
+}
+
+#parceiros {
+  background: var(--preto);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+#parceiros p {
+  color: var(--branco);
+  font-size: 24px;
+  line-height: 24px;
+}
+
+#parceiros .parceiro {
+  text-transform: uppercase;
+  color: var(--vermelho);
+  font-size: 34px;
+  font-family: 'Anton';
+  margin-top: 20px;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+#parceiros ul {
+  list-style: none;
+  text-align: left;
+}
+
+#parceiros .historico {
+  color: var(--branco);
+  font-size: 20px;
+  line-height: 24px;
+}
+
+footer {
+  background: var(--preto);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+footer h1 {
+  font-size: 3rem;
+  font-family: 'Anton';
+  text-transform: uppercase;
+  color: var(--vermelho);
+}
+
+footer p {
+  font-size: 32px;
+  color: var(--branco);
+  font-weight: bold;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer ul li {
+  font-size: 20px;
+  color: var(--branco)
 }
