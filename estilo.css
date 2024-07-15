@@ -6,42 +6,47 @@
 */
 /* TIPOGRAFIA */
 @font-face {
-  font-family: 'Anton';
-  src: url('assets/fonts/Anton-Regular.ttf');
+  font-family: "Anton";
+  src: url("assets/fonts/Anton-Regular.ttf");
 }
 
 @font-face {
-  font-family: 'Pragmatica';
-  src: url('assets/fonts/Pragmatica.ttf');
+  font-family: "Pragmatica";
+  src: url("assets/fonts/Pragmatica.ttf");
 }
 
 /* CORES */
 :root {
-  --vermelho: #FF383E;
-  --branco: #FFF;
+  --vermelho: #ff383e;
+  --branco: #fff;
   --preto: #000;
 }
 
 /* COFNGIRAÇÕES BÁSICAS */
 html,
-body, #home, #escolhas, #foco, #base, #diferencial {
+body,
+#home,
+#escolhas,
+#foco,
+#base,
+#diferencial {
   height: 100vh;
   overflow-x: hidden;
 }
 
 body {
-	background: var(--branco);
+  background: var(--branco);
 }
 
 /* BARRA DE NAVEGAÇÃO */
 nav.navbar-transparente {
-	padding: 15px 0px;
-	background: var(--branco);
+  padding: 15px 0px;
+  background: var(--branco);
 }
 
 .navbar-light .navbar-nav .nav-link {
-	color: var(--preto);
-  font-family: 'Anton';
+  color: var(--preto);
+  font-family: "Anton";
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 24px;
@@ -49,13 +54,13 @@ nav.navbar-transparente {
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-	color: var(--vermelho);
+  color: var(--vermelho);
   border-bottom: 1px solid var(--vermelho);
 }
 
 .navbar-light .navbar-toggler {
-	color: rgba(255, 255, 255, .5);
-	border-color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.5);
+  border-color: rgba(255, 255, 255, 0.5);
 }
 
 #home {
@@ -70,14 +75,15 @@ nav.navbar-transparente {
 }
 
 .capa {
-	text-align: center;
+  text-align: center;
   margin-top: 0;
   padding: 0;
 }
 
-#home h1, #diferencial h1 {
+#home h1,
+#diferencial h1 {
   font-size: 5rem;
-  font-family: 'Anton';
+  font-family: "Anton";
   text-transform: uppercase;
 }
 
@@ -99,14 +105,14 @@ nav.navbar-transparente {
 
 #escolhas h2 {
   text-transform: uppercase;
-  font-family: 'Anton';
+  font-family: "Anton";
   color: var(--branco);
   margin-bottom: 32px;
 }
 
 #escolhas p {
   color: var(--branco);
-  font-size: 'Pragmatica';
+  font-size: "Pragmatica";
   font-size: 28px;
   line-height: 30px;
 }
@@ -123,14 +129,14 @@ nav.navbar-transparente {
 
 #foco h2 {
   text-transform: uppercase;
-  font-family: 'Anton';
+  font-family: "Anton";
   color: var(--preto);
   margin-bottom: 32px;
 }
 
 #foco p {
   color: var(--preto);
-  font-size: 'Pragmatica';
+  font-size: "Pragmatica";
   font-size: 28px;
   line-height: 30px;
 }
@@ -150,9 +156,9 @@ nav.navbar-transparente {
 
 .btn-custom:hover {
   background-color: var(--preto);
- }
+}
 
- #base {
+#base {
   background: var(--preto);
   text-align: center;
   display: flex;
@@ -165,7 +171,7 @@ nav.navbar-transparente {
 #base h3 {
   color: var(--vermelho);
   text-transform: uppercase;
-  font-family: 'Anton';
+  font-family: "Anton";
 }
 
 #base p {
@@ -187,12 +193,12 @@ nav.navbar-transparente {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(40deg, --vermelho, white)
+  background: linear-gradient(40deg, --vermelho, white);
 }
 
 #diferencial p {
   color: var(--preto);
-  font-size: 'Pragmatica';
+  font-size: "Pragmatica";
   font-size: 24px;
   line-height: 24px;
 }
@@ -217,7 +223,7 @@ nav.navbar-transparente {
   text-transform: uppercase;
   color: var(--vermelho);
   font-size: 34px;
-  font-family: 'Anton';
+  font-family: "Anton";
   margin-top: 20px;
   margin-bottom: 10px;
   letter-spacing: 2px;
@@ -246,7 +252,7 @@ footer {
 
 footer h1 {
   font-size: 3rem;
-  font-family: 'Anton';
+  font-family: "Anton";
   text-transform: uppercase;
   color: var(--vermelho);
 }
@@ -263,5 +269,9 @@ footer ul {
 
 footer ul li {
   font-size: 20px;
-  color: var(--branco)
+  color: var(--branco);
+}
+
+.format-image {
+  height: 400px;
 }
