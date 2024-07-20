@@ -274,3 +274,22 @@ footer ul li {
 .format-image {
   height: 400px;
 }
+
+.btn-custom2 {
+  background-color: var(--branco);
+  color: var(--vermelho);
+  border: none;
+  width: 250px;
+  height: 100px;
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 2px;
+  margin-top: 20px;
+  cursor: default;
+}
+
+.btn-custom2:hover {
+  background-color: var(--vermelho);
+  color: var(--branco);
+}
